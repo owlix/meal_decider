@@ -1,0 +1,162 @@
+@import url('popup.css');
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+li, p, button {
+    font-family: 'Varela Round', sans-serif;
+}
+
+
+ul {
+    text-transform: uppercase;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+
+li{
+    cursor:pointer;
+    list-style: none;
+    padding: 2px;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    text-align: center;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    background: #ff3333;
+    color: #fff;
+    margin: 2px;
+    border-radius: 3px;
+}
+
+
+li.big {
+    font-size: 30px;
+}
+
+
+.visible {
+    display: inline-block;
+    visibility: visible!important;
+}
+
+.invisible {
+    display: none;
+    visibility: hidden;
+}
+
+input[type="textfield"] {
+
+}
+
+.button, button, input[type="submit"], input[type="reset"], input[type="button"], .button:focus, button:focus, input[type="submit"]:focus, input[type="reset"]:focus, input[type="button"]:focus {
+    display: inline-block;
+    height: 38px;
+    padding: 0 30px;
+    color: #000;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 1px solid #000;
+    cursor: pointer;
+    box-sizing: border-box;
+
+
+}
+
+.button:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
+    color: black;
+    border-color: black;
+    background: #fff;
+    outline: 0;
+
+}
+
+input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea, select {
+    height: 38px;
+    padding: 6px 10px;
+    background-color: #fff;
+    border: 1px solid #000;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus, textarea, select {
+    border-color: #ff3333 ;
+}
+
+
+#error {
+    color: #FF4D4D;
+    visibility: hidden;
+}
+
+div.box {
+    background-color: transparent;
+    border-radius: 3px;
+    border: 1px solid #000;
+    cursor: pointer;
+    box-sizing: border-box;
+    height: 336px;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-bottom: 20px;
+}
+
+#listHolder ul {
+    width: 90%;
+    margin: 0 auto;
+    padding: 7%;
+}
+
+#listHolder ul li {
+    font-size:13px;
+    display:inline-block;
+    background: #ff3333;
+    color: #fff;
+    margin: 2px;
+    width: 30%;
+
+}
+
+#selection-container {
+    padding: 10%;
+}
+
+#selection-container li {
+    margin-bottom: 5px;
+}
+
+.white-popup {
+    position: relative;
+    background: #FFF;
+    padding: 20px;
+    width: auto;
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#start {
+    margin-top: 2%;
+    width: 100%;
+}

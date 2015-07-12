@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Lunch Decider</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:600' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <script type="text/javascript" src="lib/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="lib/popup.js"></script>
+  <script src="app.js"></script>
+</head>
+<body>
+<header>
+  <div class="container" style="margin-top:5%;">
+  <h1>What Should I Eat?</h1>
+    <p style="margin-top: -20px">For those times when you can't decide.</p>
+    </div>
+</header>
+  <div class="container">
+    <div class="row">
+     <div class="eight columns" >
+       <h4>Choose from the cuisines below:</h4>
+       <div id="listHolder" class="box">
+         <ul>
+         </ul>
+       </div>
+       <button id="selectAll">Select All</button>
+       <button id="openAdd">Add Cuisine</button>
+       <button id="saveIt">Save</button>
+       <button id="start">Tell Me What to Eat!</button>
+     </div>
+      <div class="four columns" >
+        <h4>Your selections:</h4>
+        <div class="box">
+          <ul id="selection-container">
+
+          </ul>
+        </div>
+        <button id="clear">Clear All</button>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class=" column" >
+
+        </div>
+    </div>
+
+  </div>
+<div class="white-popup mfp-hide" id="addPopup">
+  <div>
+    <h3>Enter a custom choice </h3>
+  <input type="text" id="itemfield"placeholder="enter cusine..." value=""/>
+  <button id="addItem">Add</button>
+</div>
+
+  <div class="white-popup mfp-hide" id="results">
+    <div>
+     <!-- <h4><span id="animateRandom"></span></h4>-->
+      <h3>You should get </h3>
+      <h4><span id="result"></span></h4>
+      <span id="deciding"><h4 class="animated pulse infinite">deciding...</h4></span>
+      <button id="startPop">Roll the dice again</button>
+    </div>
+</div>
+
+</body>
+</html>
